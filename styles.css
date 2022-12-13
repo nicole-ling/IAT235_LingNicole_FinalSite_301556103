@@ -82,8 +82,8 @@ a:link, a:active, a:visited {
 
 .fadein {
     opacity: 0;
-    -webkit-transition: opacity .5s ease-in;
-    transition: opacity .5s ease-in;
+    -webkit-transition: opacity .6s ease-in;
+    transition: opacity .6s ease-in;
 }
   
 .fadein.visible {
@@ -99,7 +99,7 @@ h1 {
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /* Buttons */
@@ -299,9 +299,32 @@ a.section-link {
     text-decoration: underline;
 }
 
+main section {
+    width: 100%;
+}
+
 main section .section-centered {
     margin: 0 auto;
     width: var(--wrapper-width);
+}
+
+main section .section-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main section .section-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-left, .section-right p {
+    width: 50%;
+}
+
+.pull-quote-author {
+    font-size: var(--pull-quote-font-size);
+    text-align: right;
 }
 
 main section .section-padding-top {
@@ -372,8 +395,84 @@ section.section-split .pull-quote-container .pull-quote-wrapper.content-right {
 
 section img.section-width-image {
     width: 100%;
+    height: 100vh;
     object-fit: cover;
     margin-bottom: 2rem;
+}
+
+section.section-image-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section-image-centered img {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+section.section-image-centered img:hover{
+    opacity: 0.8;
+}
+
+section.section-image-centered .image-caption-bottom {
+    margin-bottom: .7rem;
+}
+
+section.section-image-centered .caption-wrapper {
+    width: 80%;
+}
+
+section.section-image-centered .caption-wrapper p {
+    color: #CCC;
+    font-size: .75rem;
+    text-align: right;
+}
+
+section.section-image-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.section-image-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section img.section-semi-width-image {
+    width: 80%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+section .section-text-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0px;
+}
+
+section .section-text-block .section-text-block-title h1 {
+    width: 90%;
+    line-height: 1.15;
+}
+
+section .section-text-block-right {
+    display: flex;
+}
+
+section .section-text-block-right .section-text-block-right-title {
+    width: 55%;
+}
+
+section .section-text-block-right .section-text-block-right-title h1 {
+    width: 80%;
+    line-height: 1.15;
+}
+
+section .section-text-block-right-p {
+    width: 45%;
 }
 
 section h1 {
@@ -401,18 +500,6 @@ section .button-wrapper-right {
 }
 
 /* Home Sections */
-
-section .exhibition-desc-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 0px;
-}
-
-section .exhibition-desc-title h1 {
-    line-height: 1.15;
-}
 
 section .section-centered .exhibition-info {
     display: flex;
@@ -600,10 +687,97 @@ ul.influence-list .influence-item .influence-desc {
     left: 2vw;
 }
 
+.project-details-list {
+    width: 60%;
+}
+
+.project-details-list li {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: .75rem;
+    padding-bottom: .75rem;
+    font-size: var(--pull-quote-font-size);
+    border-bottom: 1px solid #fff;
+}
+
+.project-details-list li:last-child {
+    border: 0;
+}
+
+.project-details-list li .project-detail-label {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+/* Flickity Carousel */
+
+.carousel {
+    width: 100%;
+}
+  
+.carousel-cell {
+    margin-right: 1vw;
+    width: 50%;
+    height: 60vh;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+.carousel-cell img:hover {
+    opacity: .75;
+}
+
+.flickity-page-dots {
+    bottom: -30px;
+}
+
+.flickity-page-dots .dot {
+    height: 5px;
+    width: 80px;
+    margin: 0;
+    border-radius: 0;
+    background: rgb(182, 182, 182);
+}
+
+/* no circle */
+.flickity-button {
+    background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 75px;
+    height: 75px;
+    opacity: .5;
+    transition: opacity .2s ease;
+}
+
+.flickity-prev-next-button:hover {
+    opacity: 1;   
+}
+
+.flickity-button-icon {
+    fill: white;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+    display: none;
+}
+
+.flickity-button:hover {
+    background: none;
+}
+
 /* Footer */
 footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     min-height: 10vh;
     background-color: #000;

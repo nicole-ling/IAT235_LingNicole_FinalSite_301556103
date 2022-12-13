@@ -138,7 +138,7 @@ nav h1 {
     letter-spacing: 0;
 }
 
-nav ul {
+nav ul.main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,9 +160,25 @@ nav ul a:nth-child(3) {
     margin-right: 1rem;
 }
 
-nav ul li:hover > ul,
-ul li ul:hover {
-  background: red;
+nav .dropdown-parent {
+    position: relative;
+}
+
+nav ul li:hover > .dropdown,
+nav ul li .dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li .dropdown {
+	visibility: hidden;
+    opacity: 0;
+    min-width: 15vw;
+	position: absolute;
+    transition: all 0.5s ease;
+	left: 2rem;
+    display: none;
 }
 
 /* Main Container */
@@ -295,6 +311,10 @@ section .exhibition-desc-container {
     grid-template-rows: 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 0px;
+}
+
+section .exhibition-desc-title h1 {
+    line-height: 1.15;
 }
 
 section .section-centered .exhibition-info {

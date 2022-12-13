@@ -602,8 +602,8 @@ ul.influence-list .influence-item .influence-desc {
 
 /* Footer */
 footer {
-    
     display: flex;
+    flex-direction: column;
     align-items: center;
     min-height: 10vh;
     background-color: #000;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="grids.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,18 +19,18 @@
 
         <div class="hero">
             <div class="hero-overlay"></div>
-            <img src="/images/arch-1.jpg" alt="Pulitzer Arts Foundation in St. Louis">
+            <img src="images/arch-1.jpg" alt="Pulitzer Arts Foundation">
         </div>
 
         <div class="hero-title">
             <div class="hero-title-wrapper">
-                <h1>Tadao Ando, Architect of Light</h1>
+                <h1 class="fade">Tadao Ando: architect of light</h1>
             </div>
         </div>
 
         <div class="nav-wrapper">
             <nav>
-                <h1><a href="index.html">Beauty of Simplicity</a></h1>
+                <h1><a href="index.html">Tadao Ando: Beauty of Simplicity</a></h1>
                 <ul class="main-nav">
                     <li><a href="about.html">About</a></li>
                     <li class="dropdown-parent">
@@ -50,6 +51,7 @@
                         </ul>
                     </li>
                     <li><a href="index.html#visit">Visit</a></li>
+                    <li><a href="style-guide.html">Style Guide</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,96 +61,29 @@
     <!-- MAIN CONTENT -->
     <main>
 
-        <section>
-            <div class="section-centered">
-                <p class="pull-quote" style="width: 55%">
-                    The Vancouver Art Gallery is pleased to present the work of renown Japanese architect Tadao Ando. The themed exhibition taking place in March 2023 will detail Ando's most famous works, such as the Church of Light, Chapel on the Water, Chichu Museum and Hill of the Buddha.
-                </p>
-                <a href="/exhibitions.html" class="section-link">Featured Exhibitions &rarr;</a>
-            </div>
-        </section>
-
-        <section
-            class="section-full-image section-margin-top section-margin-bottom"
-            style="height: 50vh; background-image: url('/images/ham-5.jpg')"
-        >
-        </section>
-
+        <!-- Design Philosophy -->
         <section class="section-margin-bottom">
-            <div class="section-centered" style="position: relative;">
+            <div class="section-centered fadein" style="position: relative;">
                 <div class="exhibition-desc-container">
                     <div class="exhibition-desc-title">
-                        <h1>Exhibiting simplicity and emptiness</h1>
+                        <h1>Design Philosophy</h1>
                     </div>
                     <div class="exhibition-desc-p1">
-                        <p>Ando utilizes the concept of “emptiness” from the Japanese religion Shintoism. The Shinto concept of emptiness believes that empty spaces are filled by gods or people.</p>
-                        <p>This concept applies in his work through his creation of empty spaces, which encourage people to give these spaces meaning.</p>
+                        <p>Ando is an award-winning Japanese architect best known for his use of light, concrete and the integration of nature.</p>
+                        <p>His expert use of these techniques in combination with Japanese aesthetics has created timeless architectural pieces.</p>
+                        <p>Ando’s material of choice is concrete. He uses concrete to create enclosed areas that allow people to have their personal spaces. The concrete’s bareness reinforces Ando’s belief in the Shinto concept of emptiness,</p>
                     </div>
                     <div class="exhibition-desc-p2">
-                        <p>This exhibition aims to display Ando's masterful use of nature, light and primitive shapes to create spaces that exude the Shinto concept of "emptiness".</p>
-                        <p>Experience the beauty of simplicity at the Tadao Ando exhibition, now available through December 2022 to March 2023.</p>
+                        <p> which he refers to as “a space to be filled”. This meaning he allows the visitors to give meaning to and fill the spaces he creates.</p>
+                        <p>Nature is a crucial element in Ando’s work. Its use is inspired by the presence that nature once held in traditional Japanese homes.</p>
+                        <p>His use of nature, such as the manipulation of light, enhances how visitors experience his work across a variety of architectural forms.</p>
                     </div>
                 </div>
-                <a href="/about.html" class="btn-light btn-right">Learn more</a>
             </div>
         </section>
 
-        <section id="visit" class="section-white">
-            <div class="section-centered section-padding-top section-padding-bottom">
-
-                <h1>Exhibition Info</h1>
-
-                <img src="/images/exhibition-2.jpg" class="section-width-image" style="height: 30vh" alt="Tadao Ando exhibition preview">
-
-                <div class="exhibition-info">
-
-                    <div class="exhibition-info-side">
-                        <h1>Opening Hours</h1>
-                        <p>Monday to Friday<br>10 AM &mdash; 8 PM</p>
-                        <p>Saturday<br>10 PM &mdash; 7 PM</p>
-                        <p>Sunday<br>10 PM &mdash; 6 PM</p>
-                    </div>
-
-                    <div class="exhibition-info-side">
-                        <h1>Ticket Prices</h1>
-                        <p>General Admission<br>$29</p>
-                        <p>Senior (65+)<br>$10 CAD</p>
-                        <p>Youth (12 and under)<br>Free</p>
-                    </div>
-
-                    <div class="exhibition-info-side">
-                        <h1>Location</h1>
-                        <p>Vancouver Art Gallery</p>
-                        <p>750 Hornby St</p>
-                        <p>Vancouver, BC V6Z 2H7, Canada</p>
-                        <p>604.662.4700</p>
-                    </div>
-
-                </div>
-
-                <hr>
-
-                <div class="exhibition-tickets">
-                    <div class="exhibition-tickets-inner">
-                        <div class="exhibition-tickets-form">
-                            <h1>Purchase Tickets</h1>
-                            <input type="number" name="number" min= "0" max="100" step="1" value="0">
-                            <label for="general">General Admission ($29)</label><br>
-                            <input type="number" name="number" min= "0" max="100" step="1" value="0">
-                            <label for="senior">Senior ($10)</label><br>
-                            <input type="number" name="number" min= "0" max="100" step="1" value="0">
-                            <label for="youth">Youth (Free)</label>
-                            <p class="warning">Note: Tickets are non-refundable.</p>
-                            <a href="/index.html" class="btn-dark btn-bottom">Buy Tickets</a>
-                        </div>
-                        <img src="/images/exhibition-1.jpg" alt="Tadao Ando exhibition">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        
-        <!-- <section class="section-white section-split section-margin-top">
+        <!-- Quote -->
+        <section class="section-white section-split fadein">
             <div class="section-split-side"></div>
             <img src="/images/tadao-ando-1.jpg" alt="Portrait of Tadao Ando">
             <div class="pull-quote-container">
@@ -159,16 +94,145 @@
                     <span>&mdash; Tadao Ando</span>
                 </span>
             </div>
-        </section> -->
+        </section>
+
+        <!-- Timeline -->
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+                <h1 class="fadein">Career Timeline</h1>
+                <ul class="timeline">
+
+                    <li class="fadein">
+                        <span class="timeline-year">1941</span>
+                        <span class="timeline-desc">Born in Osaka, Japan</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1958</span>
+                        <span class="timeline-desc">Started professional boxing</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1962</span>
+                        <span class="timeline-desc">Began world wide travel to learn architectural history and techniques</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1969</span>
+                        <span class="timeline-desc">Founded "Tadao Ando Architect and Associates" in Osaka</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1973</span>
+                        <span class="timeline-desc">Completed Azuma House (住吉の長屋), his first notable project </span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1990</span>
+                        <span class="timeline-desc">Alongside a growing reputation, Ando begins accepting international commissions</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1992</span>
+                        <span class="timeline-desc">Winner of the Calsberg Architectural Prize</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1995</span>
+                        <span class="timeline-desc">Winner of the Pritzker Prize</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1996</span>
+                        <span class="timeline-desc">Winner of the Praemium Imperiale Prize for Architecture</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">1997</span>
+                        <span class="timeline-desc">Became the Professor of Architecture at Tokyo University</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">2002</span>
+                        <span class="timeline-desc">Winner of the American Institute of Architects Gold Medal</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">2007</span>
+                        <span class="timeline-desc">Completed 21_21 Design Sight Museum in Tokyo</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">2014</span>
+                        <span class="timeline-desc">Completed Poly Grand Theater in Shanghai</span>
+                    </li>
+
+                    <li class="fadein">
+                        <span class="timeline-year">2020</span>
+                        <span class="timeline-desc">Completed He Art Museum in Shunde, China</span>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Influences on Architecture -->
+        <section class="section-white">
+            <div class="section-centered section-padding-top section-padding-bottom">
+                <h1 class="fadein">Influence on the Architectural Field</h1>
+                <ul class="influence-list">
+                    <li class="influence-item fadein">
+                        <h2 class="influence-title">Intersection with nature</h2>
+                        <p class="influence-desc">Ando's architecture are intimate with the nature surrounding it. By using materials, nature and space expertly, he is able to create buildings that thrive in the nature around it.</p>
+                    </li>
+
+                    <li class="influence-item fadein">
+                        <h2 class="influence-title">Changing society</h2>
+                        <p class="influence-desc">The simplicity of Ando's buildings emphasizes the Shinto religion's belief in emptiness. His buildings encourage people to give them meaning, and vice-versa.</p>
+                    </li>
+
+                    <li class="influence-item fadein">
+                        <h2 class="influence-title">Tranquil spaces</h2>
+                        <p class="influence-desc">Ando's work is known to embody minimalism and simplicity &mdash; through this, visitors are able to enjoy the space as a moment of peace and solitude, like its their own personal space.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Concrete Quote -->
+        <section class="section-split fadein" style="height: 80vh">
+            <img src="images/concrete/concrete-1.jpeg" alt="Tadao Ando's signature concrete">
+            <div class="section-split-side"></div>
+            <div class="pull-quote-container">
+                <div class="pull-quote-wrapper content-right">
+                    <h1>Signature Concrete</h1>
+                    <p class="concrete-info">
+                        Ando’s material of choice is smooth concrete which he uses to create enclosed areas that allow people to have their own “personal space”. The concrete’s bareness reinforces Ando’s concept of emptiness, which he refers to as “a space to be filled”. The spaces he creates are given meaning by its visitors.
+                    </p>
+                </span>
+            </div>
+        </section>
+
+        <!-- Concrete Image Gallery -->
+        <section class="section-margin-top">
+            <div class="section-centered">
+                <div class="concrete-gallery">
+                    <div class="div1 fadein"><img src="images/concrete/concrete-gallery-1.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div2 fadein"><img src="images/concrete/concrete-gallery-2.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div3 fadein"><img src="images/concrete/concrete-gallery-3.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div4 fadein"><img src="images/concrete/concrete-gallery-4.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div5 fadein"><img src="images/concrete/concrete-gallery-5.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div6 fadein"><img src="images/concrete/concrete-gallery-6.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div7 fadein"><img src="images/concrete/concrete-gallery-7.jpg" alt="Tadao Ando's signature concrete"></div>
+                    <div class="div8 fadein"><img src="images/concrete/concrete-gallery-8.jpg" alt="Tadao Ando's signature concrete"></div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <video playsinline autoplay muted loop poster="/images/ham-1.jpg">
-            <source src="images/footer-video-2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <footer class="fadein">
         <div class="footer-overlay">
             <div class="footer-inner">
                 <h1>Tadao Ando: Beauty of Simplicity</h1>
@@ -176,6 +240,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="top-btn">&uarr;</button>
     
     <script src="scripts.js"></script>
 </body>

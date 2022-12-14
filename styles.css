@@ -833,6 +833,14 @@ ul.influence-list .influence-item .influence-desc {
     background: none;
 }
 
+a.pdf-link {
+    text-decoration: underline;
+}
+
+a.pdf-link:hover {
+    text-decoration: none;
+}
+
 /* Footer */
 
 footer {

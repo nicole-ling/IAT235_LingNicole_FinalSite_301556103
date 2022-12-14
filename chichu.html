@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tadao Ando: Beauty of Simplicity | Chichu Art Museum</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
-
     <!-- HEADER AND MAIN IMAGE -->
     <header>
 
         <div class="hero">
-            <div class="hero-overlay"></div>
-            <img src="images/chichu/chichu-2.jpg" alt="Chichu Art Museum">
+            <div class="hero-overlay" style="background: rgba(0, 0, 0, .7)"></div>
+            <video class="hero-video" playsinline autoplay muted loop poster="images/chichu/chichu-2.jpg">
+                <source src="images/video/chichu.mp4" type="video/mp4">
+                <img src="images/chichu/chichu-2.jpg" title="Your browser does not support the <video> tag">
+            </video>
         </div>
 
         <div class="hero-title">
@@ -60,8 +64,139 @@
     <!-- MAIN CONTENT -->
     <main>
         <section class="section-margin-top section-margin-bottom">
-           
+            <div class="section-centered">
+                <ul class="project-details-list">
+                    <li class="fadein">
+                        <span class="project-detail-label">Completed</span>
+                        <span class="project-detail desc">1988</span>
+                    </li>
+                    <li class="fadein">
+                        <span class="project-detail-label">Location</span>
+                        <span class="project-detail desc">Tomamu, Hokkaido, Japan</span>
+                    </li>
+                    <li class="fadein">
+                        <span class="project-detail-label">Material</span>
+                        <span class="project-detail desc">Concrete</span>
+                    </li>
+                    <li class="fadein">
+                        <span class="project-detail-label">Size</span>
+                        <span class="project-detail desc">4200 m2 (estimated)</span>
+                    </li>
+                </ul>
+            </div>
         </section>
+
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+
+                <div class="section-right fadein">
+                    <p class="pull-quote">
+                        The Church of Light is one of Ando's signature and most famous buildings. It was constructed to complement an existing wooden church located in a residential suburb in Osaka, Japan.
+                    </p>
+                </div>
+
+                <div class="section-right fadein">
+                    <p class="pull-quote">
+                        The experience of this building is handcrafted by Ando. From the moment a visitor enters the building, light and nature come into play.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-image-centered section-margin-bottom fadein">
+            <img src="images/church/daylight.jpg" alt="Church of the Light" class="section-semi-width-image image-caption-bottom">
+            <div class="caption-wrapper">
+                <p>Building exterior in daylight</p>
+            </div>
+        </section>
+
+        <section class="section-margin-bottom">
+            <div class="section-centered section-text-block-right">
+
+                <div class="section-text-block-right-title"></div>
+                
+                <div class="section-text-block-right-p">
+
+                    <p class="pull-quote fadein">
+                        "In all my works, light is an important controlling factor. I create enclosed spaces mainly by means of thick concrete walls. The primary reason is to create a place for the individual, a zone for oneself."
+                    </p>
+
+                    <p class="pull-quote-author fadein">&mdash; Tadao Ando</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-image-centered section-margin-bottom fadein">
+            <img src="images/church/church-2.jpg" alt="Church of the Light" class="section-semi-width-image image-caption-bottom">
+            <div class="caption-wrapper">
+                <p>Building interior in dim lighting</p>
+            </div>
+        </section>
+
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+                <div class="section-left">
+                    <h1>shadow and light</h1>
+                </div>
+
+                <div class="section-left">
+                    <p class="fadein">
+                        Ando creates a juxtaposition between light and shadow by using a cross-shaped cutout in a concrete wall. The light penetrates through the cutout and illuminates the church's dark interior area.
+                    </p>
+                </div>
+
+                <div class="section-left">
+                    <p class="fadein">
+                        This use of light and cutouts is one of Ando's famous signature techniques; specifically, the manipulation of light. The shaped light pierces the darkness of the church interior and makes the visitor feel enclosed, forgetting about the outside world.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-image-centered section-margin-bottom fadein">
+            <img src="images/church/concrete.jpg" alt="Church of the Light" class="section-semi-width-image image-caption-bottom">
+            <div class="caption-wrapper">
+                <p>Reinforced concrete used in the building</p>
+            </div>
+        </section>
+
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+                <div class="section-right">
+                    <p class="fadein">
+                        This use of reinforced concrete is common in Ando's technique. The thick concrete walls of the church allow for the visitor to feel protected and soaked in the manipulated light that enters from the exterior.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="section-margin-bottom">
+                <div class="carousel fadein" data-flickity='{ "freeScroll": true, "autoPlay": "1500", "wrapAround": "true", "cellAlign": "left", "contain": true }'>
+                    <div class="carousel-cell">
+                        <img src="images/church/cloudy.jpg" alt="Church of the Light interior">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/church/concrete.jpg" alt="Church of the Light exterior">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/church/seating.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/church/sign.jpg" alt="">
+                    </div>
+                </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <section class="section-breadcrumbs">
+            <a href="exhibitions.hmtl"><span>&larr; All Exhibitions</span></a>
+            <a href="chichu.html"><span>Chichu Museum &rarr;</span></a>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -73,8 +208,11 @@
     </footer>
 
     <!-- BACK TO TOP BUTTON -->
-    <button id="top-btn">&uarr;</button>
+    <button id="top-btn"><img src="images/up-arrow.svg" alt="Up Arrow"></svg></button>
+    <p id="top-msg">Back to Top</p>
     
+    <!-- SCRIPTS -->
+    <script>document.querySelector('video').playbackRate = 5.0;</script>
     <script src="scripts.js"></script>
 </body>
 

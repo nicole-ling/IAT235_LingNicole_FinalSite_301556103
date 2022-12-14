@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tadao Ando: Beauty of Simplicity | Hill of the Buddha</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
@@ -17,8 +19,12 @@
     <header>
 
         <div class="hero">
-            <div class="hero-overlay"></div>
-            <img src="images/chichu/chichu-2.jpg" alt="Hill of the Buddha">
+            <div class="hero-overlay" style="background: rgba(0, 0, 0, .2)"></div>
+            <video playsinline autoplay muted loop poster="images/ham/ham-1.jpg">
+                <source src="images/video/buddha.mp4" type="video/mp4">
+                <img src="images/ham/ham-1.jpg" title="Your browser does not support the video tag.">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <div class="hero-title">
@@ -47,6 +53,9 @@
                             <a href="buddha.html">
                                 <li>Hill of the Buddha</li>
                             </a>
+                            <a href="he-art.html">
+                                <li>He Art Museum</li>
+                            </a>
                         </ul>
                     </li>
                     <li><a href="index.html#visit">Visit</a></li>
@@ -60,8 +69,112 @@
     <!-- MAIN CONTENT -->
     <main>
         <section class="section-margin-top section-margin-bottom">
-           
+            <div class="section-centered">
+                <ul class="project-details-list">
+                    <li class="fadein">
+                        <span class="project-detail-label">Completed</span>
+                        <span class="project-detail desc">2015</span>
+                    </li>
+                    <li class="fadein">
+                        <span class="project-detail-label">Location</span>
+                        <span class="project-detail desc">Sapporo, Japan</span>
+                    </li>
+                    <li class="fadein">
+                        <span class="project-detail-label">Material</span>
+                        <span class="project-detail desc">Concrete</span>
+                    </li>
+                </ul>
+            </div>
         </section>
+
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+
+                <div class="section-right fadein">
+                    <p class="pull-quote">
+                        The Hill of the Buddha was constructed to provide a sloping hill leading up to a pre-existing Buddha statue that resided at the Makomanai Takino Cemetery in Sapporo, Japan.
+                    </p>
+                </div>
+
+                <div class="section-right fadein">
+                    <p class="pull-quote">
+                        A 40-metre tunnel was built leading up to a rotunda that surrounds the statue. This created a spiritual entry sequence, where visitors could build anticipation before viewing the Buddha statue, bathed in a halo of light.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-image-centered section-margin-bottom fadein">
+            <img src="images/buddha/tunnel.jpg" alt="Rotunda of Hill of the Buddha statue" class="section-semi-width-image image-caption-bottom">
+            <div class="caption-wrapper">
+                <p>Rotunda of Hill of the Buddha statue</p>
+            </div>
+        </section>
+
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+                <div class="section-left fadein">
+                    <h1>leading patterns</h1>
+                </div>
+
+                <div class="section-left fadein">
+                    <p>
+                        The Buddha statue is surrounded by radial patterns of 150 thousand lavenders fanning outwards. This radial pattern emphasizes the head of the statue that is peeking out of the rotunda. From a distance, the radial pattern is much more distinct, and eventually leads the viewer’s eye to the statue’s head, piqueing their interest.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-image-centered section-margin-bottom fadein">
+            <img src="images/buddha/circular.jpg" alt="Radial lavender plant patterns around the Buddha head" class="section-semi-width-image image-caption-bottom">
+            <div class="caption-wrapper">
+                <p>Radial lavender plant patterns around the Buddha head</p>
+            </div>
+        </section>
+
+        <section class="section-image-centered section-margin-bottom fadein">
+            <img src="images/buddha/buddha-1.jpg" alt="Buddha statue bathed in light" class="section-semi-width-image image-caption-bottom">
+            <div class="caption-wrapper">
+                <p>Buddha statue bathed in light</p>
+            </div>
+        </section>
+
+        <section class="section-margin-top section-margin-bottom">
+            <div class="section-centered">
+                <div class="section-right">
+                    <p class="fadein">
+                        Ando’s use of natural light is essential to this project as it is what allows the statue to glow. He stays true to his theme of bonding nature with architecture through the way he frames the sky with the tall concrete walls. The way he frames the sky allows not only for a great view of nature, but also an opening for natural daylight to illuminate the Buddha statue, accentuating its holiness.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="section-margin-bottom">
+                <div class="carousel fadein" data-flickity='{ "freeScroll": true, "autoPlay": "1500", "wrapAround": "true", "cellAlign": "left", "contain": true }'>
+                    <div class="carousel-cell">
+                        <img src="images/buddha/pool.jpg" alt="The tranquillity pool">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/buddha/plans.jpg" alt="Planning sketches">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/buddha/lavenders.jpg" alt="150000 lavender plants">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/buddha/peeking-2.jpg" alt="Buddha statue peeking out">
+                    </div>
+                </div>
+        </section>
+
+        <section class="section-breadcrumbs">
+            <a href="exhibitions.html"><span>&larr; All Exhibitions</span></a>
+            <a href="he-art.html"><span>He Art Museum &rarr;</span></a>
+        </section>
+
     </main>
 
     <!-- FOOTER -->

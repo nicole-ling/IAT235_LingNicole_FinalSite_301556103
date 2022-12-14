@@ -485,6 +485,17 @@ section .section-text-block-right-p {
     width: 45%;
 }
 
+section .section-centered img.style-guide {
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+section .section-centered img.style-guide:hover {
+    width: 100%;
+    opacity: .75;
+}
+
 section h1 {
     font-size: var(--section-heading-font-size);
     margin-bottom: 2rem;

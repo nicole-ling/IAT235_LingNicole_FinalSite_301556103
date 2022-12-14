@@ -887,7 +887,7 @@ footer .footer-inner .footer-section p a:hover {
 
 footer .footer-inner .copyright {
     margin-top: 5vh;
-    font-size: var(--pull-quote-font-size);
+    font-size: var(--body-font-size);
 }
 
 @media only screen and (min-width: 1900px) {

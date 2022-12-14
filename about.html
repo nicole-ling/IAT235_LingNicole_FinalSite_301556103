@@ -8,7 +8,6 @@
     <title>Tadao Ando: Beauty of Simplicity | About</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grids.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
@@ -18,8 +17,11 @@
     <header>
 
         <div class="hero">
-            <div class="hero-overlay"></div>
-            <img src="images/arch-1.jpg" alt="Pulitzer Arts Foundation">
+            <div class="hero-overlay" style="background: rgba(0, 0, 0, .7)"></div>
+            <video playsinline autoplay muted loop poster="images/arch-1.jpg">
+                <source src="images/video/he-art-museum.mp4" type="video/mp4">
+                <img src="images/arch-1.jpg" alt="Pulitzer Arts Foundation" title="Your browser does not support the video tag.">
+            </video>
         </div>
 
         <div class="hero-title">
@@ -162,7 +164,7 @@
         <!-- Influences on Architecture -->
         <section class="section-white">
             <div class="section-centered section-padding-top section-padding-bottom">
-                <h1 class="fadein">Influence on the Architectural Field</h1>
+                <h1 class="fadein">Influences on the Architectural Field</h1>
                 <ul class="influence-list">
                     <li class="influence-item fadein">
                         <h2 class="influence-title">Intersection with nature</h2>
@@ -215,11 +217,33 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="fadein">
+    <footer>
         <div class="footer-inner">
-            <h1>Tadao Ando: Beauty of Simplicity</h1>
-            <span>&copy; Created by Nicole Ling for IAT235. For education purposes only.</span>
-        </div>    
+            <h1 class="footer-title"><a href="index.html">Tadao Ando: Beauty of Simplicity</a></h1>
+        </div>
+        <div class="footer-inner">
+            <span class="footer-section">
+                <address>
+                    <p>750 Hornby Street</p>
+                    <p>Vancouver, BC V6Z 2H7</p>
+                    <p><a href="mailto:info@vanartgallery.bc.ca">info@vanartgallery.bc.ca</a></p>
+                    <p>604.662.4700</p>
+                </address>
+            </span>
+            <span class="footer-section">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="exhibitions.html">Exhibitions</a></p>
+                <p><a href="index.html/#visit">Visit</a></p>
+            </span>
+            <span class="footer-section">
+                <p><a href="style-guide.html">Style Guide</a></p>
+                <p><a href="citations.txt">Citations</a></p>
+            </span>
+        </div>   
+        <div class="footer-inner">
+            <p class="copyright">&copy; Coded + Designed by Nicole Ling. For educational purposes only.</p>
+        </div> 
     </footer>
 
     <!-- BACK TO TOP BUTTON -->

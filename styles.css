@@ -823,23 +823,52 @@ ul.influence-list .influence-item .influence-desc {
 }
 
 /* Footer */
+
 footer {
-    display: flex;
-    align-items: center;
-    min-height: 10vh;
-    background-color: #000;
+    background: rgb(0, 0, 0);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: relative;
+    min-height: 30vh;
 }
 
 footer .footer-inner {
     display: flex;
-    justify-content: space-between;
     width: var(--wrapper-width);
     margin: 0 auto;
+    height: 100%;
+    z-index: 99;
 }
 
-footer .footer-inner h1 {
-    font-size: 28px;
-    margin: 0;
+footer .footer-inner h1.footer-title {
+    font-size: var(--section-heading-font-size);
+    margin-bottom: 5vh;
+    transition: opacity .2s linear;
+}
+
+footer .footer-inner h1.footer-title:hover {
+    opacity: .75;
+}
+
+footer .footer-inner .footer-section {
+    font-size: var(--pull-quote-font-size);
+}
+
+footer .footer-inner .footer-section:not(last-of-type) {
+    margin-right: 7vw;
+}
+
+footer .footer-inner .footer-section p a {
+    text-decoration: none;
+}
+
+footer .footer-inner .footer-section p a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-inner .copyright {
+    margin-top: 5vh;
+    font-size: var(--pull-quote-font-size);
 }
 
 @media only screen and (min-width: 1900px) {
